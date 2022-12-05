@@ -3,11 +3,55 @@ layout: default
 title: jobinterview
 ---
 
-<h1> Vegan Pumpkin Pie Recipe </h1> 
+<h1> Idioms / Job interview question generator </h1> 
 <p> On this webpage you will learn how to cook the best pumpkin pie ever </p>
 <p><em> And you won't believe it's vegan!</em></p>
 
-<img class="img-fluid" alt="Versuch" src="downloads/drink.jpeg" >
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<button id="idiomBtn">See another interview question</button>
+<dl id="quote"></dl>
+
+<script>
+var idioms = [ 
+'What are your strengths?', 
+'What are your weaknesses?', 
+'Elaborate your motivation!',    
+'What do you expect of the job?',
+'Where do you see yourself in 5 years?'
+];
+
+var examples = [
+'Example: <i>perfectionism, team player, determination, punctuality, reliability...</i>', 
+'Example: <i>perfectionism,team player, like to work on my own, determination...', 
+'Example: <i>self-development, learn more, work with people...</i>',
+'Example: <i>Good salary :D </i>',
+'Example: <i>Not here.</i>'
+
+];
+
+var quoteNo;
+var idiomNo;
+idiomBtn.addEventListener("click", loadQuote);
+function loadQuote() {
+    idiomNo = Math.floor(Math.random() * (idioms.length));
+    if(idiomNo !== quoteNo) {
+    //alert(quotes[quoteNo]);
+    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
+   	quoteNo = idiomNo;
+    	return quoteNo;
+    	}
+    	else {
+    	loadQuote();
+    	}
+	}
+loadQuote();
+</script>
+
+
 
 <h2> Ingredients </h2>
 <h3> For the vegan pie crust: </h3>
