@@ -3,8 +3,12 @@
     color: black;
 }
 
+.footer {
+    background:#000099;
+}
+
 .footer a {
-color: #000099;
+color: #cbd5e8;
 text-decoration: none;
 }
 
