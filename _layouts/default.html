@@ -10,84 +10,10 @@
 </head>
 <body>
  
- <!-- BEGIN NAVIGATION BAR --> 
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid notranslate">
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-       
-       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="jobsearch.html">Job Search</a>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="jobsearch.html" role="button" data-bs-toggle="dropdown"></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="tenses.html">Tenses</a></li>
-            <li><a class="dropdown-item" href="prepositions.html">Prepositions</a></li>
-            <li><a class="dropdown-item" href="verbs.html">Irregular verbs</a></li>
-          </ul>
-        </li>
-        
-         <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="cv.html">CV</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="cv.html" role="button" data-bs-toggle="dropdown"></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
-            <li><a class="dropdown-item" href="#">A third link</a></li>
-          </ul>
-        </li> 
-          
-           <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="applicationletter.html">Application Letter</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="applicationletter.html" role="button" data-bs-toggle="dropdown"></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
-            <li><a class="dropdown-item" href="#">A third link</a></li>
-              </ul>
-        </li> 
-            
-           <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="jobinterview.html">Job Interview</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="jobinterview.html" role="button" data-bs-toggle="dropdown"></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
-            <li><a class="dropdown-item" href="#">A third link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
- </nav>
- <!-- END NAVIGATION BAR -->
+{% include navigationbar.html %}
  
  
- <!-- BEGIN BANNER --> 
-<div class="container-fluid p-5 text-white text-center notranslate myBanner">
-  <h1>Learn German with Thea</h1>
-  <p>Learn all you need to know about German!</p> 
-</div>
- <!-- END BANNER -->
+{% include banner.html %}
   
 <div class="container mt-5">
  {{ content }}
