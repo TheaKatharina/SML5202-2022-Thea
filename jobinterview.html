@@ -4,13 +4,7 @@ title: jobinterview
 ---
 
 <h1> Idioms / Job interview question generator </h1> 
-<p> On this webpage you will learn how to cook the best pumpkin pie ever </p>
-<p><em> And you won't believe it's vegan!</em></p>
-
-<!DOCTYPE html>
-<html>
-
-<body>
+<p> Click on the button to see some possible job interview questions as well as some ideas how to answer them. </p>
 
 <button id="idiomBtn">See another interview question</button>
 <dl id="quote"></dl>
@@ -28,8 +22,8 @@ var examples = [
 'Example: <i>perfectionism, team player, determination, punctuality, reliability...</i>', 
 'Example: <i>perfectionism,team player, like to work on my own, determination...', 
 'Example: <i>self-development, learn more, work with people...</i>',
-'Example: <i>Good salary :D </i>',
-'Example: <i>Not here.</i>'
+'Example: <i>To gain working experience, to broaden my horizon, to improve my fluency in English...</i>',
+'Example: <i>In a leading position.</i>'
 
 ];
 
@@ -52,99 +46,5 @@ loadQuote();
 </script>
 
 <hr>
-	<h1>Randomn sentence generator</h1>
-
-<button id="btn1">Click me</button>
-<p id="demo"></p>
-
-<script>
-btn1.addEventListener("click", makeSentence);
-function makeSentence() {
-
-var person = {
-    names: [ "Brian", "Betty", "Fiona", "Freddy", "Mini", "Marvin", "Alice", "Bob", "Jane", "Arthur", "Vincent", "Amy", "Er", "Sie" ],
-    verbs: [ "spricht", "isst", "rennt", "läuft", "trinkt" ],
-    adverbs: ["langsam", "schnell", "schön", "laut", "viel", "wenig", "selten" ]
-   
-};
-  
-var i;
-var text = "";
-for (i = 0; i < person.names.length; i++) {
-
-  name = person.names[i];
-  verb = person.verbs[Math.floor(Math.random() * person.verbs.length)];
-  adv = person.adverbs[Math.floor(Math.random() * person.adverbs.length)]; 
-  text += name + " " + verb + " " + adv + "<br>";
-  document.getElementById("demo").innerHTML = text;
- }  
-}
-</script>
-
-
-
-<h2> Ingredients </h2>
-<h3> For the vegan pie crust: </h3>
-<ul>
-  <li> 1 1/4 cups all-purpose flour </li>
-  <li> 1/2 cup vegan butter or margarine </li>
-  <li> 1/2 teaspoon salt </li>
-  <li> 1/2 teaspoon sugar </li>
-  <li> 4 tablespoons ice cold water </li>
-  <li> 1 teaspoon cinnamon </li>
-</ul> 
-
-<h3> For the vegan pumpkin pie: </h3>
-<ul>
-  <li> 2 1/2 cups pumpkin puree </li>
-  <li> 1/4 cup maple syrup </li>
-  <li> 1/4 cup brown sugar </li>
-  <li> 1 teaspoon vanilla extract </li>
-  <li> 1/2 teaspoon salt </li>
-  <li> 1 cup full fat canned coconut milk </li>
-  <li> 2 teaspoons cinnamon </li>
-  <li> 1/2 teaspoon ground ginger </li>
-  <li> 1/4 teaspoon nutmeg </li>
-  <li> 1/4 teaspoon cloves </li>
-  <li> 1/4 cup cornstarch </li>
-</ul> 
-
-<h2> Instructions: </h2>
-<ol>
-  <li> Start by making the vegan pie crust. In a mixing bowl, combine flour, salt, sugar, and cinnamon. </li>
-  <li> Transfer the flour mixture to a food processor. Cut the vegan butter or margarine into cubes and add them to the flour. Pulse several times. Don't overmix. The mixture should have pea-sized clumps of butter throughout. </li>
-  <li> 1Now, add the ice water. Pulse again until the dough begins to come together. Again, make sure not to overmix.  </li>
-  <li> Take the dough out of the food processor and form it into a ball. You could drizzle the dough with a bit more ice cold water if needed. But be careful and don't use too much water. Cover the dough with plastic wrap and refrigerate for 1 hour.  </li>
-  <li> In the meantime, make the filling. In a food processor, combine the pumpkin puree with the maple syrup, brown sugar, vanilla extract, salt, coconut milk, ground cinnamon, ginger, nutmeg, cloves, and cornstarch. Process until smooth.  </li>
-  <li> Generously grease a 9-inch pie plate with vegan butter or margarine. Roll the dough out to 12 inches in diameter. Then carefully transfer it to your pie plate and gently fit it in. Trim any excess dough. If you want you could also decorate the edges.  </li>
-  <li> Pour the filling into your crust. There is no need to pre-bake the crust first. Spread it out until it's smooth.  </li>
-  <li> Preheat your oven to 350 °F. Bake the vegan pumpkin pie for 50 minutes. If the crust becomes too brown, you can cover the pie with aluminium foil, but for me it worked perfectly without the aluminium foil. </li>
-  <li> Let the pumpkin pie cool down completely on the counter. Then transfer it to the fridge overnight. This step is really important and gives the pumpkin pie enough time to firm up.  </li>
-</ol> 
-
+<p><a href="index.html">Home</a></p>
 <hr>
-
-<h2>Nutritional information per serving</h2>
-    <ul>
-      <li>Calories: 247kcal</li>
-      <li>Carbohydrates: 32g </li>
-      <li>Protein: 3g </li>
-      <li>Saturated fat: 6g </li>
-      <li>Sodium: 315mg </li>
-      <li>Potassium: 218mg </li>
-      <li>Fiber: 3g </li>
-      <li>Sugar: 13g </li>
-      <li>Vitamin A: 9965IU </li>
-      <li>Vitamin C: 2.8mg </li>
-      <li>Calcium: 42mg </li>
-      <li>Iron: 2.4mg </li>
-    </ul>
-
-<hr>
-<p><strong>Credit: </strong><a href="https://veganheaven.org/recipe/vegan-pumpkin-pie//">Sina, at VeganHeaven</a></p>
-<hr>
-
-</div>
-
-</body>
-</html>
