@@ -1,49 +1,17 @@
+
 ---
 layout: default
 title: jobinterview
 ---
 
-<h1> Idioms / Job interview question generator </h1> 
-<p> Click on the button to see some possible job interview questions as well as some ideas how to answer them. </p>
+<h1> Job Interviews </h1> 
 
-<button id="idiomBtn">See another interview question</button>
-<dl id="quote"></dl>
+<h3> Learning objectives</h3>
+<p> On the following pages you will learn how to prepare yourself for a job interview in English.   </p>
+<p> Firstly, work with a partner on the exercise <a href="daybefore" > "What to do the day before the job interview" </a>. </p>
+<p> Secondly,take a look at the  <a href="interview"> CV-template </a> randomn job interview generator </p>
+<p> Don't forget to track your progress on the <a href="index">main page </a> :) Have fun! </p>
 
-<script>
-var idioms = [ 
-'What are your strengths?', 
-'What are your weaknesses?', 
-'Elaborate your motivation!',    
-'What do you expect of the job?',
-'Where do you see yourself in 5 years?'
-];
-
-var examples = [
-'Example: <i>perfectionism, team player, determination, punctuality, reliability...</i>', 
-'Example: <i>perfectionism,team player, like to work on my own, determination...', 
-'Example: <i>self-development, learn more, work with people...</i>',
-'Example: <i>To gain working experience, to broaden my horizon, to improve my fluency in English...</i>',
-'Example: <i>In a leading position.</i>'
-
-];
-
-var quoteNo;
-var idiomNo;
-idiomBtn.addEventListener("click", loadQuote);
-function loadQuote() {
-    idiomNo = Math.floor(Math.random() * (idioms.length));
-    if(idiomNo !== quoteNo) {
-    //alert(quotes[quoteNo]);
-    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
-   	quoteNo = idiomNo;
-    	return quoteNo;
-    	}
-    	else {
-    	loadQuote();
-    	}
-	}
-loadQuote();
-</script>
 
 <hr>
 <p><a href="index.html">Home</a></p>
