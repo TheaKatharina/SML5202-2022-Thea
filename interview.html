@@ -3,47 +3,7 @@ layout: default
 title: tenses
 ---
 
-<h1> Job interview question generator </h1> 
-<p> Click on the button to see some possible job interview questions as well as some ideas how to answer them. </p>
 
-<button id="idiomBtn">See another interview question</button>
-<dl id="quote"></dl>
-
-<script>
-var idioms = [ 
-'What are your strengths?', 
-'What are your weaknesses?', 
-'Elaborate your motivation!',    
-'What do you expect of the job?',
-'Where do you see yourself in 5 years?'
-];
-
-var examples = [
-'Example: <i>perfectionism, team player, determination, punctuality, reliability...</i>', 
-'Example: <i>perfectionism,team player, like to work on my own, determination...', 
-'Example: <i>self-development, learn more, work with people...</i>',
-'Example: <i>To gain working experience, to broaden my horizon, to improve my fluency in English...</i>',
-'Example: <i>In a leading position.</i>'
-
-];
-
-var quoteNo;
-var idiomNo;
-idiomBtn.addEventListener("click", loadQuote);
-function loadQuote() {
-    idiomNo = Math.floor(Math.random() * (idioms.length));
-    if(idiomNo !== quoteNo) {
-    //alert(quotes[quoteNo]);
-    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
-   	quoteNo = idiomNo;
-    	return quoteNo;
-    	}
-    	else {
-    	loadQuote();
-    	}
-	}
-loadQuote();
-</script>
 
 <hr>
 <p><a href="index.html">Home</a></p>
