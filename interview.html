@@ -29,14 +29,10 @@ title: interview
   
 <p> </p>
 
-  
-<!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
-
 <h3>Translation help</h3>
-<p>If you have difficulties to understand the video, this translation tool will help you! Enter the subtitles that you don't understand and translate it to German</p>
+<p>If you have difficulties to understand the video, this translation tool will help you! Enter the subtitles that you don't understand and translate it to German, Arabic or Russian</p>
 <p>Enter your phrase and choose a language:</p>
 
-<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
   <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
      <div id="google_translate_element"></div>
@@ -47,12 +43,7 @@ title: interview
     <p id="transOutput" style="font-size:120%;"></p>
   </div>
 </div>
-<!-- END TRANSLATION FIELDS AREA -->
 </div>
-<!--END OUTER DIV-->
-
-<!-- SCRIPTS -->
-<!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
 
 <script> 
 var x = document.getElementById("google_translate_element");
@@ -62,18 +53,15 @@ function myTrans() {
   let myPhrase = document.getElementById("transInput").value;
   document.getElementById('transOutput').innerHTML = myPhrase;
   document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+  document.getElementsByTagName("layout")[0].setAttribute("class", "notranslate");
 }
   
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ includedLanguages: 'de,ar,rs', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  new google.translate.TranslateElement({ includedLanguages: 'de,ar,ru', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 }
 </script>
 
-<!-- SCRIPT 2: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
-
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!-- SCRIPT 3: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
 
 <script>
   document.addEventListener("DOMContentLoaded", (event) => {
@@ -81,8 +69,9 @@ function googleTranslateElementInit() {
   });
 </script>
   
+<p> </p>
 <div class="notranslate"> 
-  <p> Then think about the following questions. How would you have answered them? </p>
+  <p> Then think about the following questions. How would you have answered them? Talk to your partner about it and compare your answers! </p>
       <ul>
         <li>  Can you introduce yourself? </li>
         <li>  What is your greatest weakness? </li>
@@ -96,9 +85,10 @@ function googleTranslateElementInit() {
 <p> Work in pairs and make an own film of a successful job interview! The film should be about 5 minutes each. Upload both film (change roles afterwards) on <a href="https://drive.google.com/drive/folders/1X2CTLJu0Sm-dKfa_MWwzaMvdmkyIcU51?usp=share_link" > Google Drive </a>. </p>
 
  <img src="images/interview2.jpeg" class="img-fluid" alt="Job Interview"/>
-</div>
+
 
 <hr>
 <p><a href="index.html">Home</a></p>
+    </div>
 <hr>
 
