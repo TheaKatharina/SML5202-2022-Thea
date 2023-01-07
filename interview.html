@@ -31,7 +31,7 @@ title: interview
 
 <h3>Translation help</h3>
 <p>If you have difficulties to understand the video, this translation tool will help you! Enter the subtitles that you don't understand and translate it to German, Arabic or Russian</p>
-<p>Enter your phrase and choose a language:</p>
+<p>Enter your phrase and translate it to German:</p>
 
   <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
@@ -56,7 +56,7 @@ function myTrans() {
 }
   
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ includedLanguages: 'de,ar,ru', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  new google.translate.TranslateElement({ includedLanguages: 'de', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 }
 </script>
 
